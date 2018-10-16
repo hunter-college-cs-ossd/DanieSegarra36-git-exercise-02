@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : 
+  Author         : Jimmyzs
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -35,7 +35,7 @@ using namespace std;
 /******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
-typedef ostream& (*output_function) (const ostream & out);
+typedef ostream& (*output_function) (ostream & out);
 
 
 /******************************************************************************
@@ -45,7 +45,11 @@ typedef ostream& (*output_function) (const ostream & out);
 ******************************************************************************/
 
 
-
+ostream& Jimmyzs_oddity(ostream & out)
+{
+    out<<"Why do we drive on parkways and park on driveways?\n";
+    return out;
+}
 
 
 
@@ -53,7 +57,9 @@ int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-
+    output_function Jimmyzs;
+    Jimmyzs = Jimmyzs_oddity;
+    Jimmyzs(cout);
 
 
     return 0;
