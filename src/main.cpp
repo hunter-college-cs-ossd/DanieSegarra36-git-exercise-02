@@ -1,12 +1,12 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : Jimmyzs
+  Author         : 
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
-  Modifications  :
+  Modifications  : Added the function Jimmyzs_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
