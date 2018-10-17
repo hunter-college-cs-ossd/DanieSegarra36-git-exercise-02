@@ -6,7 +6,10 @@
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
-  Modifications  :
+
+  Modifications  : Added the function Jimmyzs_oddity to main.cpp
+                   Added audiencia-cereal oddity.
+
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -37,6 +40,11 @@ using namespace std;
 // The syntax of the output function that must be used to print an oddity.
 typedef ostream& (*output_function) (ostream & out);
 
+ostream& audiencia_cereal_oddity(ostream& out)
+{
+    out << "If you're in a vehicle going the speed of light, what happens when you turn on the headlights?";
+    return out;
+}
 
 /******************************************************************************
         
@@ -45,22 +53,33 @@ typedef ostream& (*output_function) (ostream & out);
 ******************************************************************************/
 
 
+
 ostream& yizongk_oddity(ostream& out) {
     out << "If 7-11 is open 24 hours a day, 365 days a year, why are there locks on the doors?\n";
     return out;
 }
 
-
+ostream& Jimmyzs_oddity(ostream & out)
+{
+    out<<"Why do we drive on parkways and park on driveways?\n";
+    return out;
+}
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
+
     output_function a;
     a = &yizongk_oddity;
     a(cout);
 
+    output_function Jimmyzs;
+    Jimmyzs = Jimmyzs_oddity;
+    Jimmyzs(cout);
 
+    output_function audiencia_cereal = &audiencia_cereal_oddity;
+    audiencia_cereal(cout); 
 
     return 0;
 }
