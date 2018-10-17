@@ -1,14 +1,16 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : 
+  Author         : LiudmilaZyrianova239
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
 
-  Modifications  : Added the function Jimmyzs_oddity to main.cpp
+  Modifications  : Added LiudmilaZyrianova239_oddity to main.cpp
+                   Added the function Jimmyzs_oddity to main.cpp
                    Added audiencia-cereal oddity.
+
 
   Notes:
   The number N below is the number of people on each team.
@@ -46,12 +48,10 @@ ostream& audiencia_cereal_oddity(ostream& out)
     return out;
 }
 
-/******************************************************************************
-        
-                        All Function Definitions
-
-******************************************************************************/
-
+ostream& LiudmilaZyrianova239_oddity(ostream & out){
+    out << "If a cow laughed, would milk come out her nose?\n";
+    return out;
+}
 
 
 ostream& yizongk_oddity(ostream& out) {
@@ -69,6 +69,7 @@ int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
+    LiudmilaZyrianova239_oddity(cout);
 
     output_function a;
     a = &yizongk_oddity;
