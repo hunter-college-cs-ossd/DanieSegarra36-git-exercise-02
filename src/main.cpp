@@ -54,6 +54,11 @@ ostream& audiencia_cereal_oddity(ostream& out)
 
 
 
+ostream& yizongk_oddity(ostream& out) {
+    out << "If 7-11 is open 24 hours a day, 365 days a year, why are there locks on the doors?\n";
+    return out;
+}
+
 ostream& Jimmyzs_oddity(ostream & out)
 {
     out<<"Why do we drive on parkways and park on driveways?\n";
@@ -64,6 +69,11 @@ int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
+
+    output_function a;
+    a = &yizongk_oddity;
+    a(cout);
+
     output_function Jimmyzs;
     Jimmyzs = Jimmyzs_oddity;
     Jimmyzs(cout);
