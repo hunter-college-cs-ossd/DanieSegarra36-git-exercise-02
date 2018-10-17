@@ -1,15 +1,16 @@
 /******************************************************************************
   Title          : main.cpp
   Authors        : Team 1 - github.com/hunter-college-cs-ossd/DanieSegarra36-git-exercise-02/blob/master/teams.csv
-  Created on     : October  7, 2018
+  Created on     : October 7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
-  Modifications  : Added LiudmilaZyrianova239_oddity to main.cpp
-                   Added the function Jimmyzs_oddity to main.cpp
-                   Added audiencia-cereal oddity.
-                   Added DanieSegarra36_oddity to main.cpp
+  Modifications  : Added the function LiudmilaZyrianova239_oddity to main.cpp.
+                   Added the function yizongk_oddity to main.cpp.
+                   Added the function Jimmyzs_oddity to main.cpp.
+                   Added the function audiencia_cereal_oddity to main.cpp.
+                   Added the intro/prompt function to main.cpp.
 
   Notes:
   The number N below is the number of people on each team.
@@ -38,13 +39,16 @@
 using namespace std;
 
 /******************************************************************************
- ******************       GLOBALS & FUNCTION SIGNATURES      ******************
+ *****************       GLOBALS & FUNCTION DECLARATIONS      *****************
  ******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
 typedef ostream& (*output_function) (ostream & out);
 
+// Intro / Prompt
 ostream& intro(ostream & out);
+
+// The following functions print a peculiar fact to the screen:
 ostream& audiencia_cereal_oddity(ostream& out);
 ostream& LiudmilaZyrianova239_oddity(ostream & out);
 ostream& yizongk_oddity(ostream& out);
