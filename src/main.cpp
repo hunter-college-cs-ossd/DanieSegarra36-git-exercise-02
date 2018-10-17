@@ -6,7 +6,10 @@
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
-  Modifications  :Added audiencia-cereal oddity.
+
+  Modifications  : Added the function Jimmyzs_oddity to main.cpp
+                   Added audiencia-cereal oddity.
+
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -49,10 +52,22 @@ ostream& audiencia_cereal_oddity(ostream& out)
 
 ******************************************************************************/
 
+
+
+ostream& Jimmyzs_oddity(ostream & out)
+{
+    out<<"Why do we drive on parkways and park on driveways?\n";
+    return out;
+}
+
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
+    output_function Jimmyzs;
+    Jimmyzs = Jimmyzs_oddity;
+    Jimmyzs(cout);
+
     output_function audiencia_cereal = &audiencia_cereal_oddity;
     audiencia_cereal(cout); 
 
