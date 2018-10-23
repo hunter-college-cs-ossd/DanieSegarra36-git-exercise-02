@@ -46,7 +46,7 @@ using namespace std;
 typedef ostream& (*output_function) (ostream & out);
 
 // Intro / Prompt
-ostream& intro(ostream & out);
+ostream& DanieSegarra36_oddity(ostream & out);
 
 // The following functions print a peculiar fact to the screen:
 ostream& audiencia_cereal_oddity(ostream& out);
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]) {
     output_function audiencia_cereal = &audiencia_cereal_oddity;
     // 2. Call functions
     intro(cout);
-    LiudmilaZyrianova239_oddity(cout);
+    LiudmilaZyrianova239(cout);
     yizongk(cout);
     Jimmyzs(cout);
     audiencia_cereal(cout); 
